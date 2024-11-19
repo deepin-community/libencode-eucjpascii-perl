@@ -1,15 +1,30 @@
-Source: template-repository
-Section: unknown
+Source: libencode-eucjpascii-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Nick Morrott <nickm@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13),
+               libtest-simple-perl <!nocheck>,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libencode-eucjpascii-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libencode-eucjpascii-perl.git
+Homepage: https://metacpan.org/release/Encode-EUCJPASCII
+Rules-Requires-Root: no
 
-Package: template-repository
+Package: libencode-eucjpascii-perl
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: Perl module supporting eucJP-ascii character encoding
+ Encode::EUCJPASCII provides support for eucJP-ascii character encoding, an
+ eucJP-open mapping. The following encodings are supported:
+ .
+  - eucJP-ascii
+  - x-iso2022jp-ascii (7-bit counterpart)
+ .
+ Note: x-iso2022jp-ascii is an unofficial encoding name. It has never been
+ registered by any standards bodies.

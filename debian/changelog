@@ -1,5 +1,5 @@
-template-repository (1.0-1) unstable; urgency=medium
+libencode-eucjpascii-perl (0.03-1) unstable; urgency=medium
 
-  * Initial release
+  * Initial release. (Closes: #1007806)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Nick Morrott <nickm@debian.org>  Thu, 17 Mar 2022 07:06:53 +0000
